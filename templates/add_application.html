@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Add Application</h3>
+
+<form method="POST">
+
+    <div class="mb-2">
+        <input class="form-control" name="company" placeholder="Company" required>
+    </div>
+
+    <div class="mb-2">
+        <input class="form-control" name="role" placeholder="Role" required>
+    </div>
+
+    <div class="mb-2">
+        <select class="form-control" name="status">
+            <option>Applied</option>
+            <option>Interview</option>
+            <option>Offer</option>
+            <option>Rejected</option>
+        </select>
+    </div>
+
+    <div class="mb-2">
+        <label>Applied Date</label>
+        <input type="date" class="form-control" name="applied_date">
+    </div>
+
+    <div class="mb-2">
+        <label>Deadline</label>
+        <input type="date" class="form-control" name="deadline">
+    </div>
+
+    <div class="mb-2">
+        <textarea class="form-control" name="notes" placeholder="Notes"></textarea>
+    </div>
+
+    <button class="btn btn-success">Save Application</button>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Dashboard</h3>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card p-3">Total Applications: {{ total }}</div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3">Offers: {{ offers }}</div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3">Rejected: {{ rejected }}</div>
+    </div>
+</div>
+{% endblock %}
